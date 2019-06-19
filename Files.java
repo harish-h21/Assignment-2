@@ -18,8 +18,11 @@ public class Files {
         String fileName = "temp.txt";
         String line = null;
         try {       
-            
+            //flag-true append mode
+            //flag-false write mode
              FileWriter fileWriter =new FileWriter(fileName,true);
+            
+     
             BufferedWriter bufferedWriter =new BufferedWriter(fileWriter);
 
             bufferedWriter.write("Helvyguffyt");
@@ -29,9 +32,11 @@ public class Files {
             bufferedWriter.write(" EFS.");
             bufferedWriter.newLine();
             bufferedWriter.close();
+            //reading file
             FileReader fileReader = new FileReader(fileName);
             BufferedReader bufferedReader = new BufferedReader(fileReader);
             while((line = bufferedReader.readLine()) != null) {
+               
                 System.out.println(line);
             }   
             bufferedReader.close();         
