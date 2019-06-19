@@ -1,14 +1,14 @@
 class Static
 { 
 	
-	static void m1() 
+	static void staticMethod() 
 	{ 
-		System.out.println("from m1"); 
+		System.out.println("Static method called"); 
 	} 
 
 	public static void main(String[] args) 
 	{ 
 		
-		m1(); 
+		staticMethod(); 
 	} 
 } 
